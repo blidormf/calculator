@@ -1,0 +1,78 @@
+html {
+    display: flex;
+    justify-content: center;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#calculator-body {
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    gap: 10px;
+}
+
+#display {
+    background-color: azure;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-sizing: border-box;
+    height: 100px;
+    width: auto;
+    font-size: 55px;
+    text-align: end;
+    padding: 10px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+button {
+    background-color: lightcoral;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 55px;
+    padding: 5px;
+    /* flex: 1 1 auto; */
+    box-sizing: border-box;
+    height: 100px;
+    width: 150px;
+}
+
+button:hover {
+    background-color: rgb(209, 112, 112);
+    cursor:pointer;
+}
+
+#clear, #delete {
+    flex: 1 1 auto;
+}
+
+#clear, #delete, #equals {
+    background-color: rgb(74, 179, 174);
+}
+
+#clear:hover, #delete:hover, #equals:hover {
+    background-color: rgb(67, 162, 157);
+}
+
+#operator {
+    background-color: rgb(108, 233, 103);
+}
+
+#operator:hover {
+    background-color: rgb(98, 206, 94);
+}
